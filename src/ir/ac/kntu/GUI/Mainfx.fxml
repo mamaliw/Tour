@@ -1,0 +1,45 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.text.*?>
+<?import javafx.scene.effect.*?>
+<?import javafx.scene.image.*?>
+<?import javafx.scene.control.*?>
+<?import java.lang.*?>
+<?import javafx.scene.layout.*?>
+
+<Pane xmlns="http://javafx.com/javafx/8" xmlns:fx="http://javafx.com/fxml/1" fx:controller="ir.ac.kntu.GUI.MainController">
+   <children>
+      <Pane minHeight="-Infinity" minWidth="-Infinity" prefHeight="539.0" prefWidth="800.0">
+         <children>
+            <ImageView fitHeight="539.0" fitWidth="1004.0" pickOnBounds="true" preserveRatio="true" smooth="false">
+               <image>
+                  <Image url="@Resourse/Main.PNG" />
+               </image>
+               <effect>
+                  <DropShadow blurType="GAUSSIAN" height="24.11" radius="63.6425" spread="0.15" width="232.46" />
+               </effect>
+            </ImageView>
+            <Label alignment="CENTER" prefHeight="212.0" prefWidth="800.0" text="WELCOME TO YOUR TOUR MANAGEMENT APP" textAlignment="CENTER" textFill="WHITE">
+               <font>
+                  <Font name="System Bold" size="28.0" />
+               </font>
+               <effect>
+                  <DropShadow height="83.19" radius="49.6475" spread="0.72" width="117.4" />
+               </effect>
+            </Label>
+            <BorderPane layoutX="8.0" layoutY="8.0" prefHeight="471.0" prefWidth="777.0">
+               <bottom>
+                  <HBox alignment="CENTER" prefHeight="61.0" prefWidth="444.0" spacing="10.0" BorderPane.alignment="CENTER">
+                     <children>
+                        <Button mnemonicParsing="false" onAction="#leaderMenu" prefHeight="46.0" prefWidth="134.0" text="Leaders Menu" />
+                        <Button layoutX="10.0" layoutY="10.0" mnemonicParsing="false" prefHeight="46.0" prefWidth="134.0" text="Tours Menu" />
+                        <Button layoutX="144.0" layoutY="10.0" mnemonicParsing="false" prefHeight="46.0" prefWidth="134.0" text="Cities" />
+                        <Button layoutX="278.0" layoutY="10.0" mnemonicParsing="false" prefHeight="46.0" prefWidth="134.0" text="Maps" />
+                     </children>
+                  </HBox>
+               </bottom>
+            </BorderPane>
+         </children>
+      </Pane>
+   </children>
+</Pane>
