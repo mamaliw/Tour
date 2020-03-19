@@ -40,4 +40,8 @@ public class MainMenu extends Application {
         stage.setTitle("Tour Management Program");
         stage.show();
     }
+
+    public void changeScene(Scene scene){
+
+    }
 }

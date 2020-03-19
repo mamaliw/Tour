@@ -10,7 +10,6 @@ public class Leader {
     private boolean isMarried;
     private MyDate dateOfHire;
     private MyDate birth;
-    private Integer age = birth.getYear();
     private ArrayList<String> knownCities=new ArrayList<String>();//LOWER CASE !!!
     private boolean isWorking;
     private boolean invalid;
