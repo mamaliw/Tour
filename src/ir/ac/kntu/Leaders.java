@@ -37,7 +37,7 @@ public class Leaders {
     //SEARCHs
     public Leader findLeaderByFirstName(String firstname){
         int i;
-        boolean isFound=false;
+        Boolean isFound=false;
         for (i=0; i<leaders.size() ; i++){
             if(leaders.get(i).getFirstName()==firstname){
                 isFound=true;
@@ -47,11 +47,11 @@ public class Leaders {
         if (isFound)
             return leaders.get(i);
         else
-            return new Leader(true);
+            return null;
     }
     public Leader findLeaderByLastName(String lastName){
         int i;
-        boolean isFound=false;
+        Boolean isFound=false;
         for (i=0; i<leaders.size() ; i++){
             if(leaders.get(i).getLastName()==lastName){
                 isFound=true;
@@ -61,11 +61,11 @@ public class Leaders {
         if (isFound)
             return leaders.get(i);
         else
-            return new Leader(true);
+            return null;
     }
     public Leader findLeaderByAge(int age){
         int i;
-        boolean isFound=false;
+        Boolean isFound=false;
         for (i=0; i<leaders.size() ; i++){
             if(leaders.get(i).getAge()==age){
                 isFound=true;
@@ -75,11 +75,11 @@ public class Leaders {
         if (isFound)
             return leaders.get(i);
         else
-            return new Leader(true);
+            return null;
     }
     public Leader findLeaderByKnownCities(String city){
         int i;
-        boolean isFound=false;
+        Boolean isFound=false;
         for (i=0; i<leaders.size() ; i++){
             for (int j=0 ; j<leaders.get(i).getKnownCities().size() ; j++) {
                 if (leaders.get(i).getKnownCities().get(j) == city) {
@@ -93,6 +93,6 @@ public class Leaders {
         if (isFound)
             return leaders.get(i);
         else
-            return new Leader(true);
+            return null;
     }
 }

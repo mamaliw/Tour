@@ -7,12 +7,11 @@ public class Leader {
     private String lastName;
     private Integer nationalCode;
     private Integer identifyCode;
-    private boolean isMarried;
+    private Boolean isMarried;
     private MyDate dateOfHire;
     private MyDate birth;
     private ArrayList<String> knownCities=new ArrayList<String>();//LOWER CASE !!!
-    private boolean isWorking;
-    private boolean invalid;
+    private Boolean isWorking;
 
     public void addKnownCities(String city){//done
         knownCities.add(city.toLowerCase());
@@ -46,8 +45,7 @@ public class Leader {
         this.isWorking = isWorking;
     }
 
-    public Leader(boolean invalid) {
-        this.invalid = invalid;
+    public Leader() {
     }
 
     public String getFirstName() {
@@ -120,10 +118,6 @@ public class Leader {
 
     public void setWorking(boolean working) {
         isWorking = working;
-    }
-
-    public boolean isInvalid() {
-        return invalid;
     }
 
     @Override
