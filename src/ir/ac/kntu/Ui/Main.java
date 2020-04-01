@@ -6,6 +6,7 @@ import ir.ac.kntu.MyDate;
 import ir.ac.kntu.Ui.Leader.List;
 
 import java.util.ArrayList;
+import java.util.Scanner;
 import java.util.jar.JarException;
 
 public class Main {
@@ -26,6 +27,35 @@ public class Main {
 
 
 
+
+    }
+
+    public static void run(){
+        Boolean isEnded = false;
+        Scanner input = new Scanner(System.in);
+        Integer choice;
+
+        while(isEnded){
+
+            Print.start();
+            choice = input.nextInt();
+
+            switch (choice){
+                case 1 : List.main();
+                break;
+                case 2 :
+            }
+
+
+
+
+
+
+
+
+
+        }
+        input.close();
 
     }
 

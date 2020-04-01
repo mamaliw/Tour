@@ -3,6 +3,7 @@ package ir.ac.kntu;
 import java.util.ArrayList;
 
 public class Tour {
+    private String id;
     private MyDate length;
     private Integer price;
     private String region;
@@ -13,6 +14,28 @@ public class Tour {
     private Ways way;
     private ArrayList<String> placeToVisit=new ArrayList<String>();//LOWER CASE !!!
 
+    public Tour(String id, MyDate length, Integer price, String region,
+                Integer minAmount, Integer maxAmount, String originCity,
+                String destinationCity, Ways way, ArrayList<String> placeToVisit) {
+        this.id = id;
+        this.length = length;
+        this.price = price;
+        this.region = region;
+        this.minAmount = minAmount;
+        this.maxAmount = maxAmount;
+        this.originCity = originCity;
+        this.destinationCity = destinationCity;
+        this.way = way;
+        this.placeToVisit = placeToVisit;
+    }
+
+    public String getId() {
+        return id;
+    }
+
+    public void setId(String id) {
+        this.id = id;
+    }
 
     public MyDate getLength() {
         return length;
